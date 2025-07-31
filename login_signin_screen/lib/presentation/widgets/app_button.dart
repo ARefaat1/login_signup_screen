@@ -10,7 +10,7 @@ class PrimaryButton extends StatelessWidget {
     super.key,
     required this.label,
     required this.onPressed,
-    this.isDisabled = false,
+    this.isDisabled = false,  Color? textColor,
   });
 
   @override
@@ -22,6 +22,7 @@ class PrimaryButton extends StatelessWidget {
         onPressed: isDisabled ? null : onPressed,
         style: ElevatedButton.styleFrom(
           textStyle: const TextStyle(fontSize: 16),
+          foregroundColor: Colors.white,
           backgroundColor: isDisabled ? Colors.grey : Theme.of(context).primaryColor,
         ),
         child: Text(label),

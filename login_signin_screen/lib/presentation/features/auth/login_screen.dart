@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_signin_screen/core/app_colors.dart';
 import 'package:login_signin_screen/core/theme/constants.dart';
 // import 'package:login_signin_screen/presentation/widgets/app_button.dart';
 import 'package:login_signin_screen/presentation/widgets/app_textfield.dart';
@@ -15,7 +16,7 @@ class LoginScreen extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Login Screen'),
-          backgroundColor: Colors.deepPurple.shade100,
+          backgroundColor: AppColors.primary,
         ),
         body: Center(
           child: Padding(
@@ -46,7 +47,6 @@ class LoginScreen extends StatelessWidget {
                     // login button
                     ElevatedButton(
                       onPressed: () {
-                        print('Login button pressed');
                         Navigator.push(
                           context,
                           MaterialPageRoute(

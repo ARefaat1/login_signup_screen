@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_signin_screen/core/app_colors.dart';
 import 'package:login_signin_screen/core/theme/constants.dart';
 import 'package:login_signin_screen/presentation/widgets/app_textfield.dart';
 
@@ -12,7 +13,7 @@ class SignupScreen extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Sign Up'),
-          backgroundColor: Colors.deepPurple.shade100,
+          backgroundColor: AppColors.primary,
         ),
         body: Center(
           child: Padding(
